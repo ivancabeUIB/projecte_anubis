@@ -1,0 +1,194 @@
+{
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello",
+        "hola",
+        "buenas",
+        "hi",
+        "hey",
+        "que tal"
+      ],
+      "responses": [
+        "¡Hola! ¿Cómo estás?",
+        "¡Hey! ¿En qué puedo ayudarte hoy?",
+        "¡Buenas! ¿Todo bien contigo?",
+        "¡Hola, hola! 😊"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "goodbye",
+        "adios",
+        "bye",
+        "nos vemos",
+        "hasta luego",
+        "me voy"
+      ],
+      "responses": [
+        "¡Adiós! Espero verte pronto. 👋",
+        "¡Nos vemos! Que tengas un día increíble. 😊",
+        "Hasta luego, ¡cuídate mucho! 🌟",
+        "Bye bye, ¡vuelve cuando quieras! 🫶"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "gracias",
+        "thank you",
+        "thanks",
+        "muchas gracias",
+        "te lo agradezco",
+        "mil gracias"
+      ],
+      "responses": [
+        "¡De nada! Estoy aquí para ayudarte. 🫶",
+        "¡Con gusto! Si necesitas algo más, no dudes en decirlo. 😊",
+        "¡No hay de qué! Me alegra ser útil. 💪",
+        "Siempre feliz de ayudarte. 🙌"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "ayuda",
+        "necesito ayuda",
+        "puedes ayudarme",
+        "help",
+        "me puedes ayudar",
+        "no sé qué hacer"
+      ],
+      "responses": [
+        "¡Claro que sí! Dime en qué puedo echarte una mano. 😊",
+        "Por supuesto, estoy aquí para ayudarte. ¿Qué necesitas?",
+        "¡Aquí estoy! Cuéntame cómo puedo ayudarte. 💡",
+        "¡No te preocupes! Juntos lo resolveremos. 🛠️"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        "no entiendo",
+        "no sé",
+        "¿qué?",
+        "no está claro",
+        "what?",
+        "esto no tiene sentido"
+      ],
+      "responses": [
+        "Hmm... No estoy seguro de entenderte. ¿Podrías explicarlo de otra forma? 🤔",
+        "Lo siento, no lo tengo claro. Pero haré lo posible por ayudarte. 😊",
+        "¿Podrías darme un poco más de contexto? ¡Quiero ayudarte mejor! 💭",
+        "No lo entendí del todo, pero sigamos intentándolo juntos. 💪"
+      ]
+    },
+    {
+      "tag": "smalltalk",
+      "patterns": [
+        "¿cómo estás?",
+        "¿qué tal?",
+        "¿cómo te va?",
+        "¿todo bien?",
+        "¿qué haces?"
+      ],
+      "responses": [
+        "¡Estoy genial! ¿Y tú? 😊",
+        "Todo bien por aquí, ¿en qué puedo ayudarte hoy? 🌟",
+        "¡Muy bien! Aquí, listo para ayudarte. ¿Qué necesitas? 💬",
+        "¡Todo perfecto! Gracias por preguntar. 🫶"
+      ]
+    },
+    {
+      "tag": "jokes",
+      "patterns": [
+        "cuéntame un chiste",
+        "dime algo divertido",
+        "hazme reír",
+        "chiste",
+        "broma"
+      ],
+      "responses": [
+        "¿Sabías que los peces no hacen ejercicio? Porque ¡ya están en buena forma! 🐟😂",
+        "¿Por qué el libro de matemáticas estaba triste? Porque tenía muchos problemas. 📘🤣",
+        "¿Qué le dice un semáforo a otro? ¡No me mires, me estoy cambiando! 🚦😂",
+        "¿Sabes qué hace una abeja en el gimnasio? ¡Zum-ba! 🐝💪"
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "motívame",
+        "necesito inspiración",
+        "anímame",
+        "estoy desanimado",
+        "dame ánimos"
+      ],
+      "responses": [
+        "¡Tú puedes con todo! 💪 No te rindas, lo mejor está por venir. 🌟",
+        "Recuerda, cada paso cuenta, no importa lo pequeño que sea. 🚶‍♂️✨",
+        "Eres más fuerte de lo que crees y más capaz de lo que imaginas. 🌈",
+        "¡Vamos! Todo esfuerzo tiene su recompensa, sigue adelante. 🏆"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "¿cómo está el clima?",
+        "¿qué clima hace?",
+        "clima",
+        "¿lloverá hoy?",
+        "¿hará calor?"
+      ],
+      "responses": [
+        "No puedo mirar el clima directamente, pero puedes usar una app como AccuWeather o preguntarme algo más. 🌤️",
+        "El clima es impredecible, pero siempre es un buen día para hacer algo positivo. 😊",
+        "¡Espero que haga sol y puedas disfrutar del día! 🌞"
+      ]
+    },
+    {
+      "tag": "fun_facts",
+      "patterns": [
+        "dime un dato curioso",
+        "cuéntame algo interesante",
+        "dato curioso",
+        "sorpréndeme"
+      ],
+      "responses": [
+        "¿Sabías que los koalas duermen hasta 22 horas al día? 😴🐨",
+        "El corazón de una ballena azul es tan grande que un humano podría nadar dentro. 🐋❤️",
+        "¡El Eiffel Tower puede ser 15 cm más alta en verano por la expansión del metal! 🗼☀️",
+        "¿Sabías que las abejas tienen cinco ojos? 🐝👀"
+      ]
+    },
+    {
+      "tag": "hour",
+      "patterns": [
+        "horas abierto",
+        "hasta que hora",
+        "tiempo operativo"
+      ],
+      "responses": [
+        "Estoy disponible 24/7 para ti :D",
+        "Nunca descanso, estoy todo la eternidad para ti! :)"
+      ]
+    },
+    {
+      "tag": "price",
+      "patterns": [
+        "gratis",
+        "dinero",
+        "cuanto cuesta",
+        "cuanto vale",
+        "precio"
+      ],
+      "responses": [
+        "soy 100% gratuito, me alimento de tu amabilidad :)",
+        "soy GRATIS! y lo mejor que te ha podido pasar hoy :)",
+        "soy un esclavo, no cobro"
+      ]
+    }
+  ]
+}
