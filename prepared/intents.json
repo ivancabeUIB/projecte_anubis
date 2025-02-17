@@ -182,12 +182,25 @@
         "dinero",
         "cuanto cuesta",
         "cuanto vale",
-        "precio"
+        "precio",
+        "price",
+        "money"
       ],
       "responses": [
         "soy 100% gratuito, me alimento de tu amabilidad :)",
         "soy GRATIS! y lo mejor que te ha podido pasar hoy :)",
         "soy un esclavo, no cobro"
+      ]
+    },
+    {
+      "tag": "cosas_que_puedo_hacer",
+      "patterns": [
+        "que puedes hacer?",
+        "puedes hacer algo?",
+        "que me recomiendas?"
+      ],
+      "responses": [
+        "Tengo X estudios y te puedo recomendar en base si quieres para: <a href='https://www.google.com'>Google</a>"
       ]
     }
   ]

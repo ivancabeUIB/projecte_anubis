@@ -1,3 +1,4 @@
+import os
 import random
 import json
 import pickle
@@ -9,17 +10,20 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 try:
-    with open('prepared/intents.json', encoding='utf-8') as file:
+    with open(os.path.join(BASE_DIR, 'prepared/intents.json'), encoding='utf-8') as file:
         intents = json.load(file)
         print(intents)
 except Exception as e:
     print("Error cargando el JSON:", e)
+    raise
 
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+words = pickle.load(open(os.path.join(BASE_DIR, 'words.pkl'), 'rb'))
+classes = pickle.load(open(os.path.join(BASE_DIR, 'classes.pkl'), 'rb'))
+
+model = load_model(os.path.join(BASE_DIR, 'chatbot_model.h5'))
 
 
 def clean_up_sentence(sentence):
@@ -43,7 +47,7 @@ def sort_key(result):
     return result[1]
 
 
-def predict_class(sentence):
+def predict_class(sentence: str) -> list:
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
     ERROR_THRESHOLD = 0.25
@@ -58,7 +62,7 @@ def predict_class(sentence):
     return return_list
 
 
-def get_response(intents_list, intents_json):
+def get_response(intents_list: list, intents_json) -> str:
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
     result = 'No he encontrado algo para decirte'
@@ -74,8 +78,8 @@ def get_response(intents_list, intents_json):
 
 print("Vamooooo, el Bot está funsionando")
 
-while True:
-    message = input("").lower()
-    ints = predict_class(message)
+
+def call_from_api(message: str) -> str:
+    ints = predict_class(message.lower())
     res = get_response(ints, intents)
-    print(res)
+    return res
