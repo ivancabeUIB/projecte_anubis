@@ -15,7 +15,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 try:
     with open(os.path.join(BASE_DIR, 'prepared/intents.json'), encoding='utf-8') as file:
         intents = json.load(file)
-        print(intents)
 except Exception as e:
     print("Error cargando el JSON:", e)
     raise
@@ -74,9 +73,6 @@ def get_response(intents_list: list, intents_json) -> str:
                 result = 'Lo siento, no tengo una respuesta configurada para esto.'
             break
     return result
-
-
-print("Vamooooo, el Bot está funsionando")
 
 
 def call_from_api(message: str) -> str:

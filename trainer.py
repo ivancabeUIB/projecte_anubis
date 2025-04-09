@@ -18,7 +18,6 @@ lemmatizer = WordNetLemmatizer()
 try:
     with open('prepared/intents.json', encoding='utf-8') as file:
         intents = json.load(file)
-        print(intents)
 except Exception as e:
     print("Error cargando el JSON:", e)
 
